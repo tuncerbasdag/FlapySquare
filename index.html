@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flapy square</title>
+  <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+  <script src="assets/js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script src="assets/js/jquery.youtubebackground.js"></script>
+
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://www.amaranjs.com/AmaranJS/dist/css/amaran.min.css">
+  <link rel="stylesheet" href="http://www.amaranjs.com/AmaranJS/dist/css/animate.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="helloFunction()">
+  <div id="video"></div>
+  <div class="amaran-wrapper bottom left"></div>
+  <div class="container">
+    <div class="game">
+      <div id="myfilter"></div>
+      <div id="myrestartbutton">Game Over</div>
+      <div id="canvascontainer"></div>
+    </div>
+    <div class="header"><h3>submit score</h3></div>
+    <div class="submitScore">
+      <div class="content">
+        <span> Score : </span>
+        <label id="submitScore"></label><br><br>
+        <span id="submitName"> Name : </span>
+        <input type="text" name="name" id="name"><br><br>
+        <button id="restartButton" onclick="restartGame()">Restart</button>
+        <button id="submitButton" onclick="buttonSubmit()">Submit</button>
+      </div>
+    </div>
+    <div class="header"><h3>score table</h2></div>
+      <div class="highScore">
+        <div class="content"><ol id="highScoreList"></ol></div>
+      </div>
+      <div class="music">
+        <div class="content">
+          <audio src="assets/sound/8bit.ogg" autoplay controls></audio>
+        </div>
+      </div>
+      <div class="footer">TuncerBasdag</div>
+    </div>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%; display: none;">
+      <!--<iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/yZ_4o_lEIAA?autoplay=1&controls=0&showinfo=0&autohide=1">-->
+    </iframe>
+  </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="assets/js/jquery.amaran.min.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
